@@ -1,11 +1,11 @@
 menulist=[]
 pricelist=[]
 def showbill():
-    sum=0
+    total=0
     for i in range(len(menulist)):
         print("menu :",menulist[i],"price :",pricelist[i])
-        sum+=pricelist[i]
-    print("รวมราคา :",sum)
+        total+=pricelist[i]
+    print("Total Price :",total,"THB")
 while True:
     menuname=input("Please Enter menu : ")
     if menuname.lower() == "exit":
